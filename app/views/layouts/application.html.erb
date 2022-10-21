@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html>
-
+<html class="h-full antialiased">
 <head>
   <title>Onlyburners</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -11,16 +10,16 @@
   <%= javascript_importmap_tags %>
 </head>
 
-<body>
-  <div>
-    <p class="notice">
-      <%= notice %>
-    </p>
-    <p class="alert">
-      <%= alert %>
-    </p>
-  </div>
-  <%= yield %>
+  <body class="font-sans font-normal leading-normal text-gray-800 bg-white flex flex-col min-h-screen ">
+
+    <header>
+      <%= render "shared/flash_notice" %>
+      <%= render "shared/navbar" %>
+    </header>
+
+    <main class="flex-grow">
+      <%= content_for?(:content) ? yield(:content) : yield %>
+    </main>
 </body>
 
 </html>
