@@ -44,3 +44,9 @@ Using tailwind rails and views by [justalever/kickoff_tailwind](https://github.c
 ## Devise
 
 Using the devise gem for user and session management
+
+## Deploying
+
+We're deploying using render.com.
+
+It should deploy automatically on push, to change configuration or create new instances check their [documentation](https://render.com/docs/deploy-rails)
