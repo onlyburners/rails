@@ -21,7 +21,7 @@
   <ul class="list-disc leading-loose pl-4 mb-2 text-sm">
       <% if @user_signed_in %>
       <li>
-       <%= link_to "Log out", destroy_user_session_path, method: :delete, class:"underline text-indigo-600 hover:text-indigo-700" %>
+       <%= button_to "Log out", destroy_user_session_path, method: :delete, class:"underline text-indigo-600 hover:text-indigo-700" %>
       </li>
       <% else %>
       <li>
